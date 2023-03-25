@@ -1,0 +1,16 @@
+section{
+  display: flex;
+}
+aside{
+  border: 1px darkorchid;
+  width: 33%;
+  border-right: plum 3px solid;
+  min-height: 200px;
+  text-align: right;
+}
+
+
+
+
+
+
