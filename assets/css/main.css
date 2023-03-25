@@ -1,16 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 20;
+  margin: 20;
+}
+
+
+body {
+  background-color: #dcd1dd;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/opengraph/1x1.png?auto=format&fit=crop&w=1200&h=630&q=60&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542831371-29b0f74f9713%3Fcrop%3Dfaces%252Cedges%26cs%3Dtinysrgb%26fit%3Dcrop%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fHx8MTY3OTc1MzYyMw%26ixlib%3Drb-4.0.3%26q%3D60%26w%3D1200%26auto%3Dformat%26h%3D630%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fauto%253Dformat%2526fit%253Dcrop%2526w%253D750%2526h%253D84%2526q%253D60%2526txt-color%253D000000%2526txt-size%253D40%2526txt-align%253Dmiddle%25252Cleft%2526txt-pad%253D80%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526txt%253Dcoding%26blend%3D000000");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d785f0;
+  color: #000000;
+}
+
+header h2 {
+  display: inline-block;
+  font-size: 40px;
+}
+
+nav {
+  padding-top: 30px;
+  margin-right: 20px;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
 section{
   display: flex;
 }
 aside{
-  border: 1px darkorchid;
+  border: 1px rgb(36, 21, 29);
   width: 33%;
-  border-right: plum 3px solid;
-  min-height: 200px;
+  border-right: rgb(221, 87, 136) 3px solid;
+  min-height: 300px;
   text-align: right;
 }
-
-
-
-
-
-
