@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 20;
-  margin: 20;
+  padding:0;
+  margin: 0;
 }
 
 
@@ -25,7 +25,7 @@ body, html {
 header {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #d785f0;
+  background-color: #b779f6;
   color: #000000;
 }
 
@@ -52,6 +52,27 @@ nav ul li {
   margin-left: 15px;
 }
 
+nav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a::after{
+  content: '';
+  width: 0%;
+  display: block;
+  height: 1px;
+  background:#b779f6;
+  position: relative;
+  right: 0%;
+  transition: all 1s linear;
+}
+nav a:hover::after{
+  background:#dcd1dd;
+  width: 100%;
+}
+
 
 .float-left {
   float: left;
@@ -76,7 +97,7 @@ section{
 aside{
   border: 1px rgb(36, 21, 29);
   width: 33%;
-  border-right: rgb(221, 87, 136) 3px solid;
+  border-right: rgb(72, 12, 89) 3px solid;
   min-height: 300px;
   text-align: right;
 }
@@ -85,8 +106,7 @@ aside{
 
 
 @media screen and (max-width: 768px) {
-  header,
-  main {
+  header,nav{
     flex-direction: column;
   }
 
