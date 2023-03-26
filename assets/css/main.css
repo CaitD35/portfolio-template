@@ -80,3 +80,22 @@ aside{
   min-height: 300px;
   text-align: right;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
