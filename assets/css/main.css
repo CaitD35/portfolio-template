@@ -1,10 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding:0;
-  margin: 0;
-}
-
-
 body {
   background-color: #dcd1dd;
 }
@@ -91,6 +84,7 @@ nav a:hover::after{
 }
 
 
+
 section{
   display: flex;
 }
@@ -113,7 +107,9 @@ aside{
   section {
     padding-right: 0;
   }
-
+.hero-image{
+  display:none;
+}
   aside {
     width: 100%;
     text-align: center;
