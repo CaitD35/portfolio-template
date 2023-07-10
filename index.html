@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caits Portfolio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="assets/css/reset.css"/>
-  <link rel="stylesheet" href="assets/css/main.css"/>
+  <title>Cait's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    html,body {font-family:"Verdana",sans-serif}
-    h2 {font-family:"Segoe UI",sans-serif}
-    </style>
-</head>
+    html,
+    body {
+      font-family: "Verdana", sans-serif;
+    }
 
+    h2 {
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .work-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .work-item {
+      flex-basis: 48%;
+      margin-bottom: 20px;
+    }
+
+    .larger-image {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      .work-item {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
 
 <body>
   <header>
-    <h2> Caitlin Donahue</h2>
+    <h2>Caitlin Donahue</h2>
     <nav>
       <ul>
         <li><a href="#about-me">About Me</a></li>
-        <li><a href="work">Work</a></li>
-        <li><a href="contact-me">Contact Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="hero-image"> </div>
+  <div class="hero-image"></div>
 
   <main>
-  <section id="about-me">
-    <aside>
-     <h2>About Me</h2>
-    </aside>
-    <p> My name is Caitlin Donahue (Cait) and I am learning to code at UPenn coding bootcamp. My current work experience includes customer service and finance so I am excited to learn this new skill to make a new career and future for myself! </p>
-  </section>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>My name is Caitlin Donahue (Cait) and I am learning to code at UPenn coding bootcamp. My current work experience includes customer service and finance, so I am excited to learn this new skill to make a new career and future for myself!</p>
+    </section>
 
-  <section id="work">
-    <aside>
-      <h2> Work</h2>
-    </aside>
-    <a href=https://sarroyo551.github.io/Activity-Roulette></a> <img src="/assets/images/AR_project.png"></a>
-    <a href=https://github.com/CaitD35/prework-study-guide.git></a> 
-    <a href="https://github.com/CaitD35/horiseon-refactor-.git"><img src="/.assets/images/01-html-css-git-homework-demo.png"></a>
-  </section>
-  
-  <section id="contact-me">
-    <h2>Contact Me</h2>
-  </section>
-    <ul>
-      <li>Phone: 267-701-7204</li>
-      <li>Email: caitlindonahue421@yahoo.com</li>
-    </ul>
-</main>
+
+    <section id="work">
+      <h2>Work</h2>
+      <div class="work-container">
+        <div class="work-item">
+          <a href="https://sarroyo551.github.io/Activity-Roulette">
+            <img src="assets/images/AR_project.png" alt="Activity Roulette" class="larger-image">
+          </a>
+        </div>
+
+        <div class="work-item">
+          <a href="https://workout-plus-c7901a67a230.herokuapp.com/">
+            <img src="assets/images/Screenshot 2023-07-09 at 8.05.23 PM.png" alt="Workout-tracker">
+          </a>
+        </div>
+
+        <div class="work-item">
+          <a href="https://caitd35.github.io/prework-study-guide/">
+            <img src="assets/images/Screenshot 2023-05-28 at 7.46.54 PM.png" alt="Prework Study Guide">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-me">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>Phone: 267-701-7204</li>
+        <li>Email: caitlindonahue421@yahoo.com</li>
+      </ul>
+    </section>
+  </main>
 </body>
+
 </html>
